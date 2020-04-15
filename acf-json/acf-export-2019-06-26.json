@@ -1,0 +1,222 @@
+[
+    {
+        "key": "group_5cddd947d4cd3",
+        "title": "OTIS Category Mapping",
+        "fields": [
+            {
+                "key": "field_5d0050140874e",
+                "label": "Overwrite Warning",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "PLEASE NOTE: For every \"New Taxonomy\" selected below, running \"Update\" will first remove all assigned terms for the POIs. Then new terms will be added per the assignments below. This means any \"New Taxonomy\" terms you manually added (outside of this plugin) will be removed.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5cf16d032cbdf",
+                "label": "Bulk run assignments now?",
+                "name": "bulk_run_assignments_now",
+                "type": "checkbox",
+                "instructions": "Checking this box will bulk run mapping when this page is saved.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Bulk run": "Bulk run"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_5cf16d4a2a846",
+                "label": "Run assignments hourly?",
+                "name": "run_assignments_hourly",
+                "type": "checkbox",
+                "instructions": "If this box is checked, assignments will run every hour to map categories for new OTIS posts.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Hourly run": "Hourly run"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_5ced58c8627e9",
+                "label": "Taxonomy Assignments",
+                "name": "new_otis_repeat_field",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5ced58da627ea",
+                        "label": "OTIS Taxonomy",
+                        "name": "otis_tax",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "none": "Select a taxonomy",
+                            "type": "Types",
+                            "glocats": "Global Categories",
+                            "amenities": "Amenities",
+                            "otis_category": "OTIS Categories",
+                            "otis_tag": "OTIS Tags",
+                            "ava": "AVA",
+                            "bike_friendly_business_amenities": "Bike Friendly Business Amenities",
+                            "category_retail": "Category (Retail)",
+                            "ev_type": "EV Type",
+                            "price": "Price",
+                            "cycling_difficulty": "Ride Difficulty",
+                            "seasons": "Seasons",
+                            "state": "State",
+                            "vcwm_attributes": "Visitor Center Amenities",
+                            "wilderness_type": "Wilderness Type"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5ced58ec627eb",
+                        "label": "NEW Taxonomy",
+                        "name": "select_new_taxonomy",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "none": "Select a taxonomy",
+                            "category": "Categories",
+                            "post_tag": "Tags",
+                            "tcc_poi_category": "Tillamook Chamber of Commerce Category"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5ced58f6627ec",
+                        "label": "OTIS Term",
+                        "name": "otis_term",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Term 1": "Term 1",
+                            "Term 2": "Term 2"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 1,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5ced590f627ed",
+                        "label": "NEW Term",
+                        "name": "new_term",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": [],
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 1,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "otis-category-mapping"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

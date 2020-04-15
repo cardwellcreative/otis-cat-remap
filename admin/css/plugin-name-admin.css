@@ -1,0 +1,7 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ 
+ .acf-field-5ced58f6627ec option:not(:checked),
+  .acf-field-5ced590f627ed option:not(:checked) { display:none; }
